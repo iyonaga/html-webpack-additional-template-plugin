@@ -1,0 +1,40 @@
+{
+  "name": "html-webpack-additional-template-plugin",
+  "version": "0.0.1",
+  "description": "A plugin for setting multiple HTML template simply",
+  "main": "index.js",
+  "repository": "https://github.com/iyonaga/html-webpack-additional-template-plugin.git",
+  "homepage": "https://github.com/iyonaga/html-webpack-additional-template-plugin",
+  "bugs": "https://github.com/iyonaga/html-webpack-additional-template-plugin/issues",
+  "keywords": [
+    "html-webpack-plugin",
+    "webpack",
+    "plugin",
+    "template"
+  ],
+  "author": "iyonaga <yiyonaga@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext .js index.js --format codeframe",
+    "lint:fix": "prettier-eslint --write index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.1.2",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.14.3",
+    "prettier-eslint-cli": "^4.7.1"
+  }
+}
