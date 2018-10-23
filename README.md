@@ -10,7 +10,7 @@ npm install --save html-webpack-additional-template-plugin
 
 ## Usage
 #### webpack.config.js
-```JavaScript
+```javascript
 const HtmlWebpackAdditionalTemplatePlugin = require('html-webpack-additional-template-plugin');
 
 module.exports = {
