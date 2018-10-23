@@ -13,14 +13,12 @@ class HtmlWebpackAdditionalTemplatePlugin {
         delete commonOptions.additionalTemplate;
 
         plugin.options.additionalTemplate.map(data => {
-          compiler.apply(
-            new HtmlWebpackPlugin(
-              Object.assign({}, commonOptions, {
-                filename: data.filename,
-                template: data.template
-              })
-            )
-          );
+          new HtmlWebpackPlugin(
+            Object.assign({}, commonOptions, {
+              filename: data.filename,
+              template: data.template
+            })
+          ).apply(compiler);
         });
 
         delete plugin.options.additionalTemplate;
