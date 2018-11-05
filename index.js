@@ -20,8 +20,6 @@ class HtmlWebpackAdditionalTemplatePlugin {
             })
           ).apply(compiler);
         });
-
-        delete plugin.options.additionalTemplate;
       }
     });
   }
