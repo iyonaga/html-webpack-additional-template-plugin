@@ -62,3 +62,4 @@ typings/
 
 # Additional directories/files
 /notes
+/test/dist
