@@ -1,6 +1,6 @@
 {
   "name": "html-webpack-additional-template-plugin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A plugin for setting multiple HTML template simply",
   "main": "index.js",
   "repository": "https://github.com/iyonaga/html-webpack-additional-template-plugin.git",
